@@ -1,0 +1,18 @@
+{
+  "name": "Propuesta_Proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "Santiago Padilla <santiagopadilla117@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.0.4"
+  },
+  "devDependencies": {
+    "vite": "^2.1.5"
+  }
+}
