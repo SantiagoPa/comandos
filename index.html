@@ -117,10 +117,10 @@
     <!--HEADER-->
     <main class="bg-white flex flex-row sm:flex-col" id="home-overview">
       <section
-        class="grid grid-cols-1 sm:grid-cols-2 mx-1 py-14 h-screen items-center"
+        class="grid grid-cols-1 sm:grid-cols-2 mx-1 py-14 h-screen items-center border-b-8 border-gray-600 rounded-2xl"
         data-target="home-overview"
       >
-        <article class="bg-gray-50 py-2 px-2 ml-16 grid-col">
+        <article class="bg-gray-50 py-2 px-2 ml-16 grid-col shadow-xl">
           <div class="flex flex-col">
             <h2
               class="py-2 mx-auto text-md xl:text-4xl lg:text-lg md:text-base"
@@ -167,30 +167,32 @@
         </article>
         <!--HOME-IMG-->
       </section>
-      <section id="featured-overview" class="bg-gray-100 rounded mt-8">
-        <div
-          class="container mx-auto w-full h-full py-3"
+      <section id="featured-overview" class="bg-gray-100 rounded mt-16">
+        <article
+          class="container mx-auto w-full h-full py-3 mt-16"
           data-target="featured-overview"
         >
           <!-- component -->
           <div class="sliderAx h-auto">
             <div id="slider-1" class="container mx-auto">
               <div
-                class="bg-cover bg-center max-h-screen text-gray-900 py-44 px-10 object-fill"
-                style="
-                  background-image: url(./src/img/slier1.jpg);
-                "
+                class="bg-cover bg-center max-h-screen text-gray-900 py-40 px-10 object-fill"
+                style="background-image: url(./src/img/slier1.jpg)"
               >
                 <div class="md:w-1/2">
-                  <p class="text-sm uppercase bg-gray-100 inline">digitize your business</p>
-                  <p class="text-3xl font-bold">Hi,this is your opportunity to work with us</p>
+                  <p class="text-sm uppercase bg-gray-100 inline">
+                    digitize your business
+                  </p>
+                  <p class="text-3xl font-bold">
+                    Hi,this is your opportunity to work with us
+                  </p>
                   <p class="text-2xl mb-10 leading-none">
-                    Carousel with TailwindCSS and jQuery
+                    check our plans and choose the one you like the most!!
                   </p>
                   <a
-                    href="#"
-                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-purple-600 hover:text-gray-800"
-                    >Contact us</a
+                    href="#services-overview"
+                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-sm rounded hover:bg-purple-600 hover:text-gray-800"
+                    >Services</a
                   >
                 </div>
               </div>
@@ -200,20 +202,22 @@
 
             <div id="slider-2" class="container mx-auto">
               <div
-                class="bg-cover bg-top h-auto text-gray-800 py-44 px-10 object-fill"
-                style="
-                  background-image: url(./src/img/slider2.jpeg);
-                "
+                class="bg-cover bg-top h-auto text-gray-600 py-44 px-10 object-fill"
+                style="background-image: url(./src/img/slider2.jpeg)"
               >
-                <p class="font-bold text-sm uppercase">Services</p>
-                <p class="text-3xl font-bold">Hello world</p>
+                <p class="font-bold text-sm uppercase">
+                  dashboard and many functionalities
+                </p>
+                <p class="text-3xl font-bold">
+                  turn your business into something bigger
+                </p>
                 <p class="text-2xl mb-10 leading-none">
-                  Carousel with TailwindCSS and jQuery
+                  buy our products at a reasonable price
                 </p>
                 <a
-                  href="#"
-                  class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
-                  >Contact us</a
+                  href="#services-overview"
+                  class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-sm rounded hover:bg-purple-700 hover:text-gray-800"
+                  >Services</a
                 >
               </div>
               <!-- container -->
@@ -233,13 +237,32 @@
             ></button>
           </div>
           <!--CHANGE-BUTTON-->
-        </div>
+        </article>
         <!--CARROUSEL-CONTENT-->
       </section>
       <!--CARROUSEL-->
-      <section id="services-overview"></section>
-      <section id="about-us"></section>
-      <section id="contact-us"></section>
+      <section id="services-overview" class="mt-16">
+        <article
+          class="bg-purple-300 w-screen h-screen"
+          data-target="#services-overview"
+        >
+        
+      </article>
+      </section>
+      <section id="contact-us" class="mt-16">
+        <article
+          class="bg-blue-300 w-screen h-screen"
+          data-target="#contact-us"
+        >
+      
+      </article>
+      </section>
+      <section id="about-us" class="mt-16">
+        <article
+          class="bg-yellow-100 w-screen h-screen"
+          data-target="#about-us"
+        ></article>
+      </section>
     </main>
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/scripts.js"></script>
