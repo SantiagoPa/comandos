@@ -10,9 +10,9 @@
     <title>Propuesta Proyecto</title>
   </head>
   <body class="">
-    <header class="bg-white w-screen">
+    <header class="bg-white w-screen mb-5">
       <nav
-        class="flex items-center border-2 border-gray-100 bg-gray-100 p-3 flex-wrap fixed top-0 w-full max-h-20"
+        class="flex items-center border-2 border-gray-100 bg-gray-100 p-3 flex-wrap fixed top-0 w-full"
       >
         <a href="#" class="p-2 mr-4 inline-flex items-center">
           <svg
@@ -39,25 +39,15 @@
           </span>
         </a>
         <!--LOGO-->
-        <div class="lg:hidden ml-auto">
+        <div class="mx-4 lg:hidden ml-auto">
           <button
             class="text-gray-900 inline-flex p-3 hover:bg-gray-300 rounded nav-toggler"
             data-target="#navigation"
             id="btn-menu"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
           </button>
         </div>
 
@@ -108,6 +98,18 @@
                 Sign up
               </button>
             </a>
+            <a
+            href="./public/views/sign-up.html"
+            class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-lg"
+            >
+            <button
+              class="text-white bg-purple-700 py-2 px-2 rounded border-purple-700 
+            hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-600 
+              focus:ring-opacity-50"
+            >
+              Login
+            </button>
+          </a>
           </div>
           <!--NAVEGATION-->
         </div>
@@ -147,7 +149,7 @@
                   Get Started
                 </button>
               </a>
-              <a href="#feacture" class="py-3 px-3">
+              <a href="#featured-overview" class="py-3 px-3">
                 <button
                   class="text-white bg-purple-400 py-2 px-2 rounded border-purple-700 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
                 >
@@ -169,8 +171,7 @@
       </section>
       <section id="featured-overview" class="bg-gray-100 rounded mt-16">
         <article
-          class="container mx-auto w-full h-full py-3 mt-16"
-          data-target="featured-overview"
+          class="container mx-auto w-full h-full py-3 mt-18"
         >
           <!-- component -->
           <div class="sliderAx h-auto">
@@ -179,7 +180,9 @@
                 class="bg-cover bg-center max-h-screen text-gray-900 py-40 px-10 object-fill"
                 style="background-image: url(./src/img/slier1.jpg)"
               >
-                <div class="md:w-1/2">
+                <div class="md:w-1/2"
+                data-target="featured-overview"
+                >
                   <p class="text-sm uppercase bg-gray-100 inline">
                     digitize your business
                   </p>
@@ -214,11 +217,12 @@
                 <p class="text-2xl mb-10 leading-none">
                   buy our products at a reasonable price
                 </p>
-                <a
-                  href="#services-overview"
-                  class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-sm rounded hover:bg-purple-700 hover:text-gray-800"
-                  >Services</a
-                >
+                <button>
+                  <a  
+                    href="#services-overview"
+                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-sm rounded hover:bg-purple-700 hover:text-gray-800"
+                    >Services</a>
+                </button>
               </div>
               <!-- container -->
               <br />
@@ -242,28 +246,289 @@
       </section>
       <!--CARROUSEL-->
       <section id="services-overview" class="mt-16">
-        <article
-          class="bg-purple-300 w-screen h-screen"
+        <div
+          class="bg-gray-50 w-screen h-screen grid grid-cols-3 items-center"
           data-target="#services-overview"
         >
-        
-      </article>
+          <article class="bg-gray-100 py-5 px-5 shadow-2xl mx-5 h-72 rounded-lg">
+              <div class="bg-gradient-to-r from-green-400 to-blue-500 py-5 px-5 rounded-2xl items-center mx-auto h-28 w-32">
+                <div class="text-white ml-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
+                    <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
+                    <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
+                  </svg>
+                </div>
+              </div>
+              <span class="flex flex-wrap justify-center text-center">
+                <h3 class="my-3 text-3xl">24hr Support</h3>
+                <p class="my-1 text-gray-800">
+                  You will have support 24 hours a day, if you have any concerns or questions
+                  you have!
+                </p>
+              </span>
+          </article>
+          <!--SERVICE-ONE-->    
+          <article class="bg-gray-100 py-5 px-5 mx-5 h-72 rounded-lg shadow-2xl">
+            <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full items-center mx-auto py-5 px-5 w-32">
+              <div class="text-white ml-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
+                  <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+              </div>
+            </div>
+            <span class="flex flex-wrap justify-center text-center">
+              <h3 class="my-3 text-3xl">multi platform</h3>
+              <p class="my-1 text-gray-800">
+                You can use our services from a computer, a tablet or a smart phone, you decide how and why to use our product!
+              </p>
+            </span>                      
+          </article>
+          <!--SERVICE-TWO-->
+          <article class="bg-gray-100 py-5 px-5 mx-5 h-72 rounded-lg shadow-2xl">
+            <div class="bg-gradient-to-r from-pink-500 to-yellow-500 py-5 px-5 rounded-3xl items-center h-28 w-32 mx-auto">
+              <div class="text-white ml-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                  <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                </svg>
+              </div>
+            </div>
+            <span class="flex flex-wrap justify-center text-center">
+              <h3 class="my-3 text-3xl">Others</h3>
+              <p class="my-1 text-gray-700">
+                We have a team of developers who can provide extra services, so do not hesitate to contact us!
+              </p>
+            </span>                      
+          </article>
+          <!--SERVICE-THREE-->
+        </div>
       </section>
+      <!--SERVICES-OVERVIEW-->
       <section id="contact-us" class="mt-16">
-        <article
-          class="bg-blue-300 w-screen h-screen"
+        <div class="bg-blue-100 w-screen h-screen grid grid-cols-2">
+          <article
+          class="my-auto mx-auto shadow-xl"
           data-target="#contact-us"
-        >
-      
-      </article>
+          >
+            <form action="" class="bg-white py-5 flex flex-wrap mx-5 justify-center text-center rounded-lg">
+              <span class="text-3xl py-5">
+                My data
+              </span>
+              <div class="space-x-3 mx-2 text-base flex items-center my-5">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="You name" class="border-2 border-gray-300 rounded-md outline-none max-h-8" >
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="You last name" class="border-2 border-gray-300 rounded-md outline-none max-h-8">
+              </div>
+              <div class="py-2 space-x-3 mx-2 text-base flex my-5">
+                <label for="email">Email</label>
+                <input type="email" placeholder="example@example.com" class="border-2 border-gray-300 rounded-md outline-none max-h-8">
+                <label for="smartphone">smartphone</label>
+                <input type="number" id="smartphone" placeholder="ej: 3121595956..." class="border-2 border-gray-300 rounded-md outline-none max-h-8 max">
+              </div>
+              <button class="my-5">
+                <a  
+                  href="#contact-us"
+                  class="bg-purple-800 py-4 px-4 text-white font-bold uppercase text-sm 
+                  rounded hover:bg-purple-700 hover:text-gray-300"
+                  >Contacts me</a>
+              </button>
+            </form>
+            <!--FORM-CONTACT-US-->
+          </article>
+          <article class="my-auto mx-auto shadow-xl bg-white grid grid-cols-3 text-blue-400 rounded-lg">
+            <div class="justify-center text-center px-2 py-3 border-2 border-blue-100 mx-1 my-1">
+              <span class="text-3xl py-5 text-gray-900">
+                Free
+              </span>
+              <span class="text-base">
+                <ul class="py-5 text-center justify-center items-center mx-auto">
+                  <li>Dashboard</li>
+                  <li>Multi Platform</li>
+                  <li>free trial for one month</li>
+                  <li class="text-red-500">
+                    <div class=" inline-flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="bottom-0 text-xl pt-5 text-green-400">$0.0/month</li>
+                </ul>
+                <button class="my-5">
+                  <a  
+                    href="#contact-us"
+                    class="bg-purple-800 py-4 px-4 text-white font-bold uppercase text-sm 
+                    rounded hover:bg-purple-700 hover:text-gray-300"
+                    >Get Started</a>
+                </button>
+              </span>
+            </div>
+            <!--PRICING-ONE-->
+            <div class="mx-1 my-1 border-2 border-blue-100 justify-center text-center px-2 py-3">
+              <span class="text-3xl py-5 text-gray-900">
+                Basic
+              </span>
+              <span class="text-base">
+                <ul class="py-5">
+                  <li>Dashboard</li>
+                  <li>Multi Platform</li>
+                  <li>Support</li>
+                  <li class="text-red-500">
+                    <div class=" inline-flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="bottom-0 text-xl pt-5 text-green-400">$2.99/month</li>
+                </ul>
+                <button class="my-5">
+                  <a  
+                    href="#contact-us"
+                    class="bg-purple-800 py-4 px-4 text-white font-bold uppercase text-sm 
+                    rounded hover:bg-purple-700 hover:text-gray-300"
+                    >Get Started</a>
+                </button>
+              </span>
+            </div>
+            <!--PRICING-TWO-->
+            <div class="mx-1 my-1 border-2 border-blue-100 justify-center text-center px-2 py-3">
+              <span class="text-3xl py-5 text-gray-900">
+                Pro
+              </span>
+              <span class="text-base">
+                <ul class="py-5">
+                  <li>Dashboard</li>
+                  <li>Multi Platform</li>
+                  <li>Support</li>
+                  <li class="mb-3">unlimited accounts</li>
+                  <li class="bottom-0 text-xl pt-5 text-green-400">$5.99/month</li>
+                </ul>
+                <button class="my-5">
+                  <a  
+                    href="#contact-us"
+                    class="bg-purple-800 py-4 px-4 text-white font-bold uppercase text-sm 
+                    rounded hover:bg-purple-700 hover:text-gray-300"
+                    >Get Started</a>
+                </button>
+              </span>
+            </div>
+            <!--PRICING-THREE-->
+          </article>
+        </div>
       </section>
+      <!--CONTACT-US-->
       <section id="about-us" class="mt-16">
-        <article
-          class="bg-yellow-100 w-screen h-screen"
+        <div class="bg-yellow-100 w-screen h-screen">
+          <span class="text-3xl flex justify-center py-14">
+            Developers of the Project's
+          </span>
+          <article
+          class="my-auto mx-auto grid grid-cols-2"
           data-target="#about-us"
-        ></article>
+          >
+          <div class="mx-5 shadow-xl">
+            <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+              <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none 
+              rounded-full mx-auto" src="./src/img/santiago.jpeg" 
+              alt="foto-dev" width="300" height="300">
+              <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                <blockquote class="text-center">
+                  <ul class="text-lg font-semibold">
+                    <li>Eat.</li>
+                    <li>Code.</li>
+                    <li>Sleep.</li>
+                    <li>Repeat.</li>
+                  </ul>
+                  <p class="text-lg font-semibold">
+                    “sometimes I just need that to get through my day to day”
+                  </p>
+                </blockquote>
+                <figcaption class="font-medium text-center">
+                  <div class="text-blue-400">
+                    Santiago Padilla Arcia
+                  </div>
+                  <div class="text-gray-500">
+                    Student in Systems Engineering
+                    (Data Science)
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+          <!--CARD-ONE-->
+          <div class="my-auto mx-auto shadow-xl">
+            <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+              <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none 
+              rounded-full mx-auto" src="./src/img/santiago.jpeg" 
+              alt="foto-dev" width="300" height="300">
+              <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                <blockquote class="text-center">
+                  <p class="text-lg font-semibold">
+                    “andres beltran quote”
+                  </p>
+                </blockquote>
+                <figcaption class="font-medium text-center">
+                  <div class="text-blue-400">
+                    Luis Andres Macea Beltran
+                  </div>
+                  <div class="text-gray-500">
+                    Student in Systems Engineering
+                    (Data Science)
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+          <!--CARD-TWO-->
+        </article>
+        </div>
       </section>
+      <!--ABOUT-US-->
     </main>
+    <footer id="footer" class="bg-gray-800 pt-10 sm:mt-10">
+      <div class="flex flex-row text-white space-x-3 justify-around" data-target="footer">
+        <div class="">
+          <span class="text-xl">Dev</span>
+          <ul class="underline">
+            <li><a href="#footer" class="hover:text-gray-400">Team</a></li>
+            <li><a href="#footer" class="hover:text-gray-400">Community</a></li>
+            <li><a href="#footer" class="hover:text-gray-400">location</a></li>
+          </ul>
+        </div>
+        <!--COL-1-->
+        <div class="">
+          <span class="text-xl">Company</span>
+          <ul class="underline">
+            <li><a href="#footer" class="hover:text-gray-400">Info</a></li>
+            <li><a href="#footer" class="hover:text-gray-400">PQR</a></li>
+            <li><a href="#footer" class="hover:text-gray-400">location</a></li>
+          </ul>
+        </div>
+        <!--COL-2-->
+        <div class="">
+          <span class="text-xl">Social</span>
+          <ul class="underline">
+            <li><a href="#footer" class="hover:text-gray-400">Facebook</a></li>
+            <li><a href="#footer" class="hover:text-gray-400">Twitter</a></li>
+            <li><a href="#footer" class="hover:text-gray-400">Instagram</a></li>
+          </ul>
+        </div>
+        <!--COL-3-->
+      </div>
+        <!-- Copyright Bar -->
+      <div class="pt-2 ">
+        <div class="flex pb-5 px-3 m-auto pt-5 
+          border-t border-gray-500 text-gray-400 text-sm 
+          flex-col md:flex-row max-w-6xl">
+          <div class="mt-2">
+            © Copyright. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+      <!--Copyright Bar-->
+    </footer>
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/scripts.js"></script>
   </body>
