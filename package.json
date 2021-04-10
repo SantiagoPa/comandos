@@ -1,0 +1,19 @@
+{
+  "name": "Propuesta_Proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build-css": "tailwindcss build src/tailwind.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "Santiago Padilla <santiagopadilla117@gmail.com>, Andres Beltran <andres98belt@gmail.com> ",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.1.0",
+    "vite": "^2.1.5"
+  }
+}
