@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--TAILWIND CSS-->
-    <!--<link href="./CSS/tailwind.css" rel="stylesheet">-->
     <link href="../styles.css" rel="stylesheet" />
 
     <title>Propuesta Proyecto</title>
@@ -38,7 +37,7 @@
         </div>
       </div>
       <div class="flex items-center px-4">
-        <span>Nombre Usuario</span>
+        <span class="none">Nombre Usuario</span>
         <div class="ml-2">
           <button class="block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-purple-400" id="btn-profile">
             <img
@@ -64,7 +63,7 @@
     </div>
 
     <div class="flex h-full">
-      <div class="bg-gray-800 p-6 w-64">
+      <div class="bg-gray-800 p-6 sm:w-28 md:w-60 lg:w-64 xl:w-64">
         <ul>
           <li>
             <a
@@ -72,6 +71,9 @@
               class="flex items-center px-4 py-6 rounded hover:bg-gray-900 hover:text-gray-400 my-2"
             >
               <div class="h-4 text-gray-200">
+                <div>
+                  
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -90,7 +92,7 @@
                   />
                 </svg>
               </div>
-              <span class="ml-2">Home</span>
+              <span class="ml-2 none none8">Home</span>
             </a>
           </li>
 
@@ -119,7 +121,7 @@
                   />
                 </svg>
               </div>
-              <span class="ml-2">Dashboard</span>
+              <span class="ml-2 none none8">Dashboard</span>
             </a>
           </li>
 
@@ -142,7 +144,7 @@
                   />
                 </svg>
               </div>
-              <span class="ml-2">Orders</span>
+              <span class="ml-2 none none8">Orders</span>
             </a>
           </li>
 
@@ -171,7 +173,7 @@
                   />
                 </svg>
               </div>
-              <span class="ml-2">Products</span>
+              <span class="ml-2 none none8">Products</span>
             </a>
           </li>
 
@@ -195,7 +197,7 @@
                   />
                 </svg>
               </div>
-              <span class="ml-2">Customers</span>
+              <span class="ml-2 none none8">Customers</span>
             </a>
           </li>
 
@@ -218,7 +220,7 @@
                   />
                 </svg>
               </div>
-              <span class="ml-2">Vendors</span>
+              <span class="ml-2 none none8">Vendors</span>
             </a>
           </li>
         </ul>
@@ -231,7 +233,7 @@
         <div class="container mx-auto px-6 py-8">
           <div class="mt-4">
             <div class="flex flex-wrap -mx-6">
-              <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
+              <div class="w-full px-6 sm:w-1/2 md:flex md:flex-col xl:w-1/3">
                 <div
                   class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white"
                 >
@@ -435,7 +437,8 @@
                         <div class="flex">
                           <a
                             href="#"
-                            class="text-indigo-600 hover:text-indigo-900 flex items-center"
+                            class="text-indigo-600 hover:text-indigo-900 flex items-center
+                            hover:bg-gray-200"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -459,7 +462,7 @@
                           </a>
                           <a
                             href="#"
-                            class="text-red-500 hover:text-red-600 flex items-center"
+                            class="text-red-500 hover:text-red-600 hover:bg-red-200 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -543,7 +546,8 @@
                         <div class="flex">
                           <a
                             href="#"
-                            class="text-indigo-600 hover:text-indigo-900 flex items-center"
+                            class="text-indigo-600 
+                            hover:bg-gray-200 hover:text-indigo-900 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -567,7 +571,7 @@
                           </a>
                           <a
                             href="#"
-                            class="text-red-500 hover:text-red-600 flex items-center"
+                            class="text-red-500 hover:text-red-600 hover:bg-red-200 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -651,7 +655,7 @@
                         <div class="flex">
                           <a
                             href="#"
-                            class="text-indigo-600 hover:text-indigo-900 flex items-center"
+                            class="text-indigo-600 hover:bg-gray-200 hover:text-indigo-900 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -675,7 +679,7 @@
                           </a>
                           <a
                             href="#"
-                            class="text-red-500 hover:text-red-600 flex items-center"
+                            class="text-red-500 hover:text-red-600 hover:bg-red-200 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -759,7 +763,7 @@
                         <div class="flex">
                           <a
                             href="#"
-                            class="text-indigo-600 hover:text-indigo-900 flex items-center"
+                            class="text-indigo-600 hover:bg-gray-200 hover:text-indigo-900 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -783,7 +787,7 @@
                           </a>
                           <a
                             href="#"
-                            class="text-red-500 hover:text-red-600 flex items-center"
+                            class="text-red-500 hover:text-red-600 hover:bg-red-200 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -867,7 +871,7 @@
                         <div class="flex">
                           <a
                             href="#"
-                            class="text-indigo-600 hover:text-indigo-900 flex items-center"
+                            class="text-indigo-600 hover:bg-gray-200 hover:text-indigo-900 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg
@@ -891,7 +895,7 @@
                           </a>
                           <a
                             href="#"
-                            class="text-red-500 hover:text-red-600 flex items-center"
+                            class="text-red-500 hover:text-red-600 hover:bg-red-200 flex items-center"
                           >
                             <div class="flex justify-around">
                               <svg

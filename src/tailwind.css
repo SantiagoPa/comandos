@@ -6,6 +6,9 @@
         padding-top:2rem;
         padding-bottom: 2rem;
     }
+    .none7{
+        display: none;
+    }
 }
 @media screen and (max-width: 800px){
     .none8{
@@ -35,7 +38,7 @@
 }
 @media screen and (min-width: 1300px){
     .xlpadding{
-        padding-top:6.2rem; 
+        padding-top:6rem; 
     }
 }
 @tailwind utilities;
