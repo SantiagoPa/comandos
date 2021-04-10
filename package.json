@@ -8,7 +8,7 @@
     "build-css": "tailwindcss build src/tailwind.css -o public/styles.css"
   },
   "keywords": [],
-  "author": "Santiago Padilla <santiagopadilla117@gmail.com>",
+  "author": "Santiago Padilla <santiagopadilla117@gmail.com>, Andres Beltran <andres98belt@gmail.com> ",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.2.5",

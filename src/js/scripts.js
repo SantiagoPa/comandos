@@ -67,3 +67,4 @@ $(window).ready(function () {
 
   loopSlider();
 });
+
