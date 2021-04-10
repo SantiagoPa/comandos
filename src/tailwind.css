@@ -1,6 +1,25 @@
 
 @tailwind base;
 @tailwind components;
+@media screen and (max-width: 700px){
+    .none{
+        display: none;
+    }
+    .myflex{
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .mygrid{
+        display: grid;
+        grid-template-columns: 1;
+    }
+    .mypadding{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
 @tailwind utilities;
 
 @media (min-width:1024px){
