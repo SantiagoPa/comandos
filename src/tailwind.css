@@ -1,6 +1,43 @@
 
 @tailwind base;
 @tailwind components;
+@media screen and (max-width: 770px){
+    .mdpadding{
+        padding-top:2rem;
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .none8{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .none{
+        display: none;
+    }
+    .myflex{
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .mygrid{
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 1;
+    }
+    .mypadding{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    .xlpadding{
+        padding-top:6.2rem; 
+    }
+}
 @tailwind utilities;
 
 @media (min-width:1024px){
